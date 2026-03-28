@@ -1,3 +1,10 @@
+# [1.16.0](https://github.com/hoo-dles/morphe-patches/compare/v1.15.0...v1.16.0) (2026-03-28)
+
+
+### Features
+
+* **SoundCloud:** Add `Enable SoundCloud Go+` and `Disable telemetry` patches ([bbc812c](https://github.com/hoo-dles/morphe-patches/commit/bbc812c22a0a5fd0d0623d07cc21561e6ec4cc16))
+
 # [1.16.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.15.0...v1.16.0-dev.1) (2026-03-27)
 
 
