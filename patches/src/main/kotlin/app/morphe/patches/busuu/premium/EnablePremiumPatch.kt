@@ -13,7 +13,7 @@ val enablePremiumPatch = bytecodePatch(
     compatibleWith(Compatibility(
         name = "Busuu",
         packageName = "com.busuu.android.enc",
-        targets = listOf(AppTarget("32.30.0"))
+        targets = listOf(AppTarget("32.30.0(1575420)"))
     ))
 
     execute {
