@@ -1,3 +1,10 @@
+# [1.19.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.18.0...v1.19.0-dev.1) (2026-04-03)
+
+
+### Features
+
+* **Lyfta:** Add `Enable Premium` patch ([90b238a](https://github.com/hoo-dles/morphe-patches/commit/90b238aa3866acfdc3c05cb54cc4b58a9beef314))
+
 # [1.18.0](https://github.com/hoo-dles/morphe-patches/compare/v1.17.0...v1.18.0) (2026-04-01)
 
 
