@@ -48,6 +48,7 @@
 | MyExpenses                      | `org.totschnig.myexpenses`         | <ul><li>Enable Pro</li></ul>                                                                          |
 | MyFitnessPal                    | `com.myfitnesspal.android`         | <ul><li>Enable Premium+</li></ul>                                                                     |
 | NOMone Desktop                  | `nom.vrd`                          | <ul><li>Disable anti-tamper</li><li>Disable telemetry</li><li>Remove trial limit</li></ul>            |
+| Nova Launcher                   | `com.teslacoilsw.launcher`         | <ul><li>Enable Prime</li></ul>                                                                        |
 | Pandora                         | `com.pandora.android`              | <ul><li>Disable ads</li><li>Unlimited skips</li></ul>                                                 |
 | Podcast Addict                  | `com.bambuna.podcastaddict`        | <ul><li>Enable Premium</li></ul>                                                                      |
 | Proton VPN                      | `ch.protonvpn.android`             | <ul><li>Remove server change delay</li><li>Unlock custom DNS</li><li>Unlock split tunneling</li></ul> |
