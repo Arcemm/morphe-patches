@@ -60,6 +60,7 @@
 | Solid Explorer :earth_americas: | `pl.solidexplorer2`                | <ul><li>Enable Pro</li><ul>                                                                           |
 | Teuida :earth_americas:         | `net.teuida.teuida`                | <ul><li>Enable Premium</li></ul>                                                                      |
 | TTMIK Stories :dart:            | `app.ttmikstories.android`         | <ul><li>Enable Premium</li></ul>                                                                      |
+| Ventusky                        | `cz.ackee.ventusky`                | <ul><li>Enable Premium</li></ul>                                                                      |
 | Wallcraft                       | `com.wallpaperscraft.wallpaper`    | <ul><li>Enable Premium</li></ul>                                                                      |
 | Windy                           | `com.windyty.android`              | <ul><li>Enable Premium</li></ul>                                                                      |
 | World Map Quiz                  | `com.qbis.guessthecountry`         | <ul><li>Enable Premium</li></ul>                                                                      |
