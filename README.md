@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> Due to the high number of recent patch requests, and a limited amount of free time, new features will be temporarily paused. Sorry!
+
 <div align="center"> 
 <picture>
     <source
@@ -20,7 +23,7 @@
 <br/>
 
 > [!NOTE]
-> Patch requests are always welcome, so feel free to open an issue.
+> ~~Patch requests are always welcome, so feel free to open an issue.~~
 >
 > If you find this project useful and want to help support its development, consider [donating](.donate/donate.md). :pray:
 
@@ -60,6 +63,7 @@
 | Solid Explorer :earth_americas: | `pl.solidexplorer2`                | <ul><li>Enable Pro</li><ul>                                                                           |
 | Teuida :earth_americas:         | `net.teuida.teuida`                | <ul><li>Enable Premium</li></ul>                                                                      |
 | TTMIK Stories :dart:            | `app.ttmikstories.android`         | <ul><li>Enable Premium</li></ul>                                                                      |
+| Ventusky                        | `cz.ackee.ventusky`                | <ul><li>Enable Premium</li></ul>                                                                      |
 | Wallcraft                       | `com.wallpaperscraft.wallpaper`    | <ul><li>Enable Premium</li></ul>                                                                      |
 | Windy                           | `com.windyty.android`              | <ul><li>Enable Premium</li></ul>                                                                      |
 | World Map Quiz                  | `com.qbis.guessthecountry`         | <ul><li>Enable Premium</li></ul>                                                                      |

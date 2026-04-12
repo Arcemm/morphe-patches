@@ -1,5 +1,5 @@
 {
-  "version": "1.22.0",
+  "version": "1.23.0-dev.1",
   "patches": [
     {
       "name": "Add resources",
@@ -68,7 +68,7 @@
       "dependencies": [],
       "compatiblePackages": {
         "com.duolingo": [
-          "6.66.5"
+          "6.74.4"
         ]
       },
       "options": []
@@ -262,7 +262,7 @@
       "dependencies": [],
       "compatiblePackages": {
         "com.duolingo": [
-          "6.66.5"
+          "6.74.4"
         ]
       },
       "options": [
@@ -404,6 +404,18 @@
       "compatiblePackages": {
         "app.ttmikstories.android": [
           "1.16.0"
+        ]
+      },
+      "options": []
+    },
+    {
+      "name": "Enable Premium",
+      "description": "Enables app features locked behind the subscription paywall.",
+      "use": true,
+      "dependencies": [],
+      "compatiblePackages": {
+        "cz.ackee.ventusky": [
+          "52.0"
         ]
       },
       "options": []
@@ -595,7 +607,7 @@
       "dependencies": [],
       "compatiblePackages": {
         "com.duolingo": [
-          "6.66.5"
+          "6.74.4"
         ]
       },
       "options": []
