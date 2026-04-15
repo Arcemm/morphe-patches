@@ -1,6 +1,3 @@
-> [!IMPORTANT]
-> Due to the high number of recent patch requests, and a limited amount of free time, new features will be temporarily paused. Sorry!
-
 <div align="center"> 
 <picture>
     <source
@@ -23,7 +20,7 @@
 <br/>
 
 > [!NOTE]
-> ~~Patch requests are always welcome, so feel free to open an issue.~~
+> Patch requests are always welcome, **but please read the [new announcement](https://github.com/hoo-dles/morphe-patches/discussions/232) before opening an issue!**
 >
 > If you find this project useful and want to help support its development, consider [donating](.donate/donate.md). :pray:
 
