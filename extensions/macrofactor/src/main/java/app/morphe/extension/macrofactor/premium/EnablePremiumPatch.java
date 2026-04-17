@@ -53,6 +53,9 @@ public class EnablePremiumPatch {
             subscription.put("store", "app_store");
             subscription.put("auto_resume_date", JSONObject.NULL);
 
+            JSONObject workoutsSubscription = new JSONObject(subscription.toString());
+            subscriptions.put("com.sbs.train.subscription.1", workoutsSubscription);
+
             JSONObject entitlements = new JSONObject();
             subscriber.put("entitlements", entitlements);
 
@@ -63,6 +66,10 @@ public class EnablePremiumPatch {
             entitlement.put("purchase_date", pastDate);
             entitlement.put("product_identifier", "com.sbs.diet.1y0599.2w0");
             entitlement.put("expires_date", oneYearFuture);
+
+            JSONObject workoutsEntitlement = new JSONObject(subscription.toString());
+            workoutsEntitlement.put("product_identifier", "com.sbs.train.subscription.1");
+            subscriptions.put("subscription_workouts", workoutsEntitlement);
         }
         catch (Exception ex) {
             Logger.printException(() -> "Error modifying customer JSON", ex);

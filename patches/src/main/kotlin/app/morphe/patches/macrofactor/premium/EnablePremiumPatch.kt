@@ -16,7 +16,7 @@ val enablePremiumPatch = bytecodePatch(
     name = "Enable Premium",
     description = "Enables app features locked behind the subscription paywall."
 ) {
-    compatibleWith(Constants.COMPATIBILITY)
+    compatibleWith(*Constants.COMPATIBILITY)
 
     dependsOn(extensionPatch, spoofSignaturePatch)
 
