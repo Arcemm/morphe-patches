@@ -1,17 +1,3 @@
-<div align="center"> 
-<picture>
-    <source
-      width="512px"
-      media="(prefers-color-scheme: dark)"
-      srcset="https://raw.githubusercontent.com/MorpheApp/.github/refs/heads/main/profile/assets/morphe-wordmark/morphe_wordmark_dark.svg"
-    />
-    <img 
-      width="512px"
-      src="https://raw.githubusercontent.com/MorpheApp/.github/refs/heads/main/profile/assets/morphe-wordmark/morphe_wordmark_light.svg"
-    />
-</picture>
-</div>
-
 # :leaves: hoodles Morphe Patches
 
 ![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/hoo-dles/morphe-patches/release.yml)
@@ -28,6 +14,7 @@
 
 | App                                  | Package                            | Patches                                                                                               |
 |--------------------------------------|------------------------------------|-------------------------------------------------------------------------------------------------------|
+| AdGuard                              | `com.adguard.android`              | <ul><li>Enable Premium</li></ul>                                                                      |
 | AllTrails                            | `com.alltrails.alltrails`          | <ul><li>Enable Peak membership</li></ul>                                                              |
 | Amazon Prime Video                   | `com.amazon.avod.thirdpartyclient` | <ul><li>Enable speed control</li><li>Skip ads</li></ul>                                               |
 | Avocards                             | `com.avocards`                     | <ul><li>Enable Premium</li></ul>                                                                      |
