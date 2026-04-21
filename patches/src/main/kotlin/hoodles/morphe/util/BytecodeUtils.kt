@@ -28,6 +28,14 @@ internal fun MutableField.removeFlag(vararg flags: AccessFlags) {
 }
 
 /**
+ * Remove the given AccessFlags from the method.
+ */
+internal fun MutableMethod.removeFlag(vararg flags: AccessFlags) {
+    val bitField = flags.map { it.value }.reduce { acc, flag -> acc and flag }
+    this.accessFlags = this.accessFlags and bitField.inv()
+}
+
+/**
  * Get the first field with the given name.
  */
 internal fun MutableClass.fieldByName(name: String): MutableField {
