@@ -1,3 +1,10 @@
+# [1.28.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.27.0...v1.28.0-dev.1) (2026-04-24)
+
+
+### Features
+
+* **Proton VPN:** Add `Unlock LAN connections` patch ([e568677](https://github.com/hoo-dles/morphe-patches/commit/e568677dd5f3d87f7a51a957455fd196021c532c))
+
 # [1.27.0](https://github.com/hoo-dles/morphe-patches/compare/v1.26.0...v1.27.0) (2026-04-24)
 
 

@@ -1,5 +1,5 @@
 {
-  "version": "1.27.0",
+  "version": "1.28.0-dev.1",
   "patches": [
     {
       "name": "Block Permissions Request",
@@ -753,7 +753,7 @@
       "dependencies": [],
       "compatiblePackages": {
         "ch.protonvpn.android": [
-          "5.16.83.0"
+          "5.17.72.0"
         ]
       },
       "options": []
@@ -837,13 +837,25 @@
       "options": []
     },
     {
+      "name": "Unlock LAN connections",
+      "description": "Enables the LAN connections feature usually locked behind the Proton Plus paywall.",
+      "use": true,
+      "dependencies": [],
+      "compatiblePackages": {
+        "ch.protonvpn.android": [
+          "5.17.72.0"
+        ]
+      },
+      "options": []
+    },
+    {
       "name": "Unlock custom DNS",
       "description": "Enables the custom DNS feature usually locked behind the Proton Plus paywall.",
       "use": true,
       "dependencies": [],
       "compatiblePackages": {
         "ch.protonvpn.android": [
-          "5.16.83.0"
+          "5.17.72.0"
         ]
       },
       "options": []
@@ -869,7 +881,7 @@
       "dependencies": [],
       "compatiblePackages": {
         "ch.protonvpn.android": [
-          "5.16.83.0"
+          "5.17.72.0"
         ]
       },
       "options": []
