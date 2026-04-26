@@ -1,11 +1,10 @@
-title: "[App Name]"
 body:
   - type: markdown
     attributes:
       value: |
         > [!IMPORTANT]
-        > Please check existing discussions first! If the app is already requested, upvote it instead :arrow_up:
-
+        > Please check the [existing app requests](https://github.com/hoo-dles/morphe-patches/discussions/categories/app-requests) first. If a discussion is already open, upvote it for visibility! :arrow_up:
+        <br />
   - type: input
     id: app_name
     attributes:
