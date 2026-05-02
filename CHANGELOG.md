@@ -1,3 +1,10 @@
+## [1.29.1-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.29.0...v1.29.1-dev.1) (2026-05-02)
+
+
+### Bug Fixes
+
+* **Soundcloud:** Change patch name and UI element to indicate only Go capabilities ([eb29d18](https://github.com/hoo-dles/morphe-patches/commit/eb29d184d597c492344a30e8760848fd6b304cc9))
+
 # [1.29.0](https://github.com/hoo-dles/morphe-patches/compare/v1.28.0...v1.29.0) (2026-05-02)
 
 
