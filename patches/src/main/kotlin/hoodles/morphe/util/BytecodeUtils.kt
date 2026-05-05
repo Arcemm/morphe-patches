@@ -23,16 +23,26 @@ internal fun ClassDef.hasFlag(flag: AccessFlags ) = this.accessFlags and flag.va
  * Remove the given AccessFlags from the field.
  */
 internal fun MutableField.removeFlag(vararg flags: AccessFlags) {
-    val bitField = flags.map { it.value }.reduce { acc, flag -> acc and flag }
-    this.accessFlags = this.accessFlags and bitField.inv()
+    this.accessFlags = removeFlags(this.accessFlags, *flags)
 }
 
 /**
  * Remove the given AccessFlags from the method.
  */
 internal fun MutableMethod.removeFlag(vararg flags: AccessFlags) {
-    val bitField = flags.map { it.value }.reduce { acc, flag -> acc and flag }
-    this.accessFlags = this.accessFlags and bitField.inv()
+    this.accessFlags = removeFlags(this.accessFlags, *flags)
+}
+
+/**
+ * Remove the given AccessFlags from the class.
+ */
+internal fun MutableClass.removeFlag(vararg flags: AccessFlags) {
+    this.accessFlags = removeFlags(this.accessFlags, *flags)
+}
+
+private fun removeFlags(currentFlags: Int, vararg flagsToRemove: AccessFlags): Int {
+    val bitField = flagsToRemove.map { it.value }.reduce { acc, flag -> acc and flag }
+    return currentFlags and bitField.inv()
 }
 
 /**
