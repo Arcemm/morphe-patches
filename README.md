@@ -20,6 +20,7 @@
 | Avocards                             | `com.avocards`                             | <ul><li>Enable Premium</li></ul>                                                                                                     |
 | Busuu                                | `com.busuu.android.enc`                    | <ul><li>Enable Premium</li></ul>                                                                                                     |
 | Cake :dart:                          | `me.mycake`                                | <ul><li>Enable Plus</li></ul>                                                                                                        |
+| CamScanner                           | `com.intsig.camscanner`                    | <ul><li>Disable telemetry</li><li>Enable Premium</li></ul>                                                                           |
 | DAILY POCKET :earth_americas:        | `kr.co.yjteam.dailypay`                    | <ul><li>Enable Premium</li></ul>                                                                                                     |
 | Duolingo                             | `com.duolingo`                             | <ul><li>Disable Play Integrity check</li><li>Enable debug mode</li><li>Enable Super/MAX</li></ul>                                    |
 | Eggbun                               | `kr.eggbun.eggconvo`                       | <ul><li>Enable Premium</li><li>Force native keyboard</li></ul>                                                                       |
@@ -44,7 +45,7 @@
 | Smart Launcher                       | `ginlemon.flowerfree`                      | <ul><li>Enable Pro</li></ul>                                                                                                         |
 | SnoreLab                             | `com.snorelab.app`                         | <ul><li>Enable Premium</li></ul>                                                                                                     |
 | Sofascore                            | `com.sofascore.results`                    | <ul><li>Disable ads</li></ul>                                                                                                        |
-| SoundCloud                           | `com.soundcloud.android`                   | <ul><li>AMOLED dark theme</li><li>Enable SoundCloud Go+</li><li>Disable telemetry</li></ul>                                          |
+| SoundCloud                           | `com.soundcloud.android`                   | <ul><li>AMOLED dark theme</li><li>Enable SoundCloud Go</li><li>Disable telemetry</li></ul>                                           |
 | Solid Explorer :earth_americas:      | `pl.solidexplorer2`                        | <ul><li>Enable Pro</li><ul>                                                                                                          |
 | Teuida :earth_americas:              | `net.teuida.teuida`                        | <ul><li>Enable Premium</li></ul>                                                                                                     |
 | TTMIK Stories :dart:                 | `app.ttmikstories.android`                 | <ul><li>Enable Premium</li></ul>                                                                                                     |

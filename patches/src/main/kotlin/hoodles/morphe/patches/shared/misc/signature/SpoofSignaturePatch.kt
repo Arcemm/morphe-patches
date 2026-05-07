@@ -31,6 +31,10 @@ fun spoofSignaturePatch(signature: String) = bytecodePatch {
         GetSignatureFingerprint.method.returnEarly(strippedSig)
 
         val originalApplicationClassName = ReflectionUtils.javaToDexName(applicationPath)
+
+        // remove `final` access flag on original application class
+        mutableClassDefBy(originalApplicationClassName).removeFlag(AccessFlags.FINAL)
+
         GetSignatureFingerprint.classDef.setSuperClass(originalApplicationClassName)
 
         ConstructorFingerprint.method.replaceInstruction(0, """

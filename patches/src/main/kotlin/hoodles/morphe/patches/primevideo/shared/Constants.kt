@@ -8,6 +8,6 @@ object Constants {
         name = "Prime Video",
         packageName = "com.amazon.avod.thirdpartyclient",
         appIconColor = 0x177BCE,
-        targets = listOf(AppTarget("3.0.447.757"))
+        targets = listOf(AppTarget("3.0.452.1047"))
     )
 }

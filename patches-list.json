@@ -1,5 +1,5 @@
 {
-  "version": "1.29.0",
+  "version": "1.30.0-dev.1",
   "patches": [
     {
       "name": "AMOLED dark theme",
@@ -160,6 +160,20 @@
     },
     {
       "name": "Disable telemetry",
+      "description": "Disables CamScanner's custom telemetry system.",
+      "use": true,
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": {
+        "com.intsig.camscanner": [
+          "7.15.5.2604080000"
+        ]
+      },
+      "options": []
+    },
+    {
+      "name": "Disable telemetry",
       "description": "Disables event logging sent to the app's custom endpoint.",
       "use": true,
       "dependencies": [],
@@ -255,6 +269,20 @@
       "compatiblePackages": {
         "com.busuu.android.enc": [
           "32.30.0(1575420)"
+        ]
+      },
+      "options": []
+    },
+    {
+      "name": "Enable Premium",
+      "description": "Enables some app features locked behind the subscription paywall. Certain server-side functionality may be unavailable.",
+      "use": true,
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": {
+        "com.intsig.camscanner": [
+          "7.15.5.2604080000"
         ]
       },
       "options": []
@@ -679,7 +707,7 @@
       "dependencies": [],
       "compatiblePackages": {
         "com.amazon.avod.thirdpartyclient": [
-          "3.0.447.757"
+          "3.0.452.1047"
         ]
       },
       "options": []
@@ -802,7 +830,7 @@
       "dependencies": [],
       "compatiblePackages": {
         "com.amazon.avod.thirdpartyclient": [
-          "3.0.447.757"
+          "3.0.452.1047"
         ]
       },
       "options": []
@@ -816,7 +844,7 @@
       ],
       "compatiblePackages": {
         "com.amazon.avod.thirdpartyclient": [
-          "3.0.447.757"
+          "3.0.452.1047"
         ]
       },
       "options": []
