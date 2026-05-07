@@ -5,7 +5,7 @@ morphe-patches-library = "1.0.4"
 smali = "d92701d947"
 agp = "9.1.0"
 annotation = "1.9.1"
-gson = "2.13.2"
+gson = "2.14.0"
 guava = "33.5.0-jre"
 
 [libraries]
