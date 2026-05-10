@@ -1,3 +1,10 @@
+# [1.31.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.30.0...v1.31.0-dev.1) (2026-05-10)
+
+
+### Features
+
+* **Duolingo:** Add `Disable dynamic app icon` patch ([5173205](https://github.com/hoo-dles/morphe-patches/commit/5173205bd44fa5d0415e8a1e0a74d6a1b89072da))
+
 # [1.30.0](https://github.com/hoo-dles/morphe-patches/compare/v1.29.0...v1.30.0) (2026-05-07)
 
 
