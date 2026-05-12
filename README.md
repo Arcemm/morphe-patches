@@ -34,6 +34,7 @@
 | Meme Generator                       | `com.zombodroid.MemeGenerator`             | <ul><li>Enable Pro</li></ul>                                                                                                         |
 | Merriam-Webster                      | `com.merriamwebster`                       | <ul><li>Enable Premium</li></ul>                                                                                                     |
 | Mimo                                 | `com.getmimo`                              | <ul><li>Enable Pro</li></ul>                                                                                                         |
+| Mirinae                              | `com.mirinae.mirinae`                      | <ul><li>Enable Pro</li></ul>                                                                                                         |
 | MyExpenses                           | `org.totschnig.myexpenses`                 | <ul><li>Enable Pro</li></ul>                                                                                                         |
 | MyFitnessPal                         | `com.myfitnesspal.android`                 | <ul><li>Enable Premium+</li></ul>                                                                                                    |
 | NOMone Desktop                       | `nom.vrd`                                  | <ul><li>Disable anti-tamper</li><li>Disable telemetry</li><li>Remove trial limit</li></ul>                                           |
@@ -57,7 +58,7 @@
 | Xodo                                 | `com.xodo.pdf.reader`                      | <ul><li>Enable Pro</li></ul>                                                                                                         |
 | XRecorder                            | `videoeditor.videorecorder.screenrecorder` | <ul><li>Enable Pro</li></ul>                                                                                                         |
 |                                      |                                            |                                                                                                                                      |
-| _Universal Patches_                  |                                            | <ul><li>Change package name</li><li>Disable Pairip license check</li><li>Hide app icon</li></ul>                                     |
+| _Universal Patches_                  |                                            | <ul><li>Change package name</li><li>Disable Pairip license check</li><li>Enable debug</li><li>Hide app icon</li></ul>                |
 
 :earth_americas: _Supports MicroG integration._\
 :dart: _This app has a strict requirement to use the version defined in the patch._\
