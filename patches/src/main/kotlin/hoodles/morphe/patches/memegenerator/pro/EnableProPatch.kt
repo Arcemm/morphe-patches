@@ -15,7 +15,7 @@ val enableProPatch = bytecodePatch(
         name = "Meme Generator",
         packageName = "com.zombodroid.MemeGenerator",
         appIconColor = 0xC93133,
-        targets = listOf(AppTarget("4.6671"))
+        targets = listOf(AppTarget("4.6824"))
     ))
 
     execute {
@@ -24,5 +24,6 @@ val enableProPatch = bytecodePatch(
 
         IsFreeFingerprint.method.returnBoxedBooleanEarly(false)
         IsCacheLicenseValidFingerprint.method.returnEarly(true)
+        CheckLicenseMillis.method.returnEarly(Long.MAX_VALUE)
     }
 }

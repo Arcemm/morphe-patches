@@ -19,6 +19,12 @@ object IsCacheLicenseValidFingerprint : Fingerprint(
     )
 )
 
+object CheckLicenseMillis : Fingerprint (
+    parameters = listOf("Landroid/content/Context;"),
+    returnType = "J",
+    strings = listOf("YzcPC7h384FA")
+)
+
 object CheckSignatures1Fingerprint : Fingerprint(
     accessFlags = listOf(AccessFlags.PUBLIC, AccessFlags.STATIC),
     parameters = listOf("Landroid/app/Activity;"),
