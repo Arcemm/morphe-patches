@@ -1,5 +1,5 @@
 {
-  "version": "1.31.0",
+  "version": "1.31.1-dev.1",
   "patches": [
     {
       "name": "AMOLED dark theme",
@@ -1186,7 +1186,7 @@
           "signatures": null,
           "targets": [
             {
-              "version": "9.0",
+              "version": "9.11",
               "isExperimental": false,
               "minSdk": null,
               "description": null
@@ -1716,31 +1716,6 @@
           "targets": [
             {
               "version": "3.0.452.1047",
-              "isExperimental": false,
-              "minSdk": null,
-              "description": null
-            }
-          ]
-        }
-      ],
-      "options": []
-    },
-    {
-      "name": "Spoof package signature",
-      "description": "Spoofs the SHA1 signature hash required for Firebase API calls.",
-      "default": true,
-      "dependencies": [],
-      "compatiblePackages": [
-        {
-          "packageName": "com.getmimo",
-          "name": "Mimo",
-          "description": null,
-          "apkFileType": null,
-          "appIconColor": "#7E4BDE",
-          "signatures": null,
-          "targets": [
-            {
-              "version": "9.0",
               "isExperimental": false,
               "minSdk": null,
               "description": null
