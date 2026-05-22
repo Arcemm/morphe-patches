@@ -1,3 +1,10 @@
+## [1.32.1-dev.2](https://github.com/hoo-dles/morphe-patches/compare/v1.32.1-dev.1...v1.32.1-dev.2) (2026-05-22)
+
+
+### Bug Fixes
+
+* **MacroFactor:** Bump version compatibility to v5.7.8 ([acc40a1](https://github.com/hoo-dles/morphe-patches/commit/acc40a1a25b446d5ca67a24ed60e3a3db64e72cb))
+
 ## [1.32.1-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.32.0...v1.32.1-dev.1) (2026-05-18)
 
 
