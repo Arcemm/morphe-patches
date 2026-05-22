@@ -1,3 +1,10 @@
+# [1.33.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.32.1-dev.2...v1.33.0-dev.1) (2026-05-22)
+
+
+### Features
+
+* **Windy:** Update patch logic to support v50.0.2 ([32f606b](https://github.com/hoo-dles/morphe-patches/commit/32f606bdfda024569a7b97cf9eb5033fe4e05273))
+
 ## [1.32.1-dev.2](https://github.com/hoo-dles/morphe-patches/compare/v1.32.1-dev.1...v1.32.1-dev.2) (2026-05-22)
 
 
