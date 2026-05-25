@@ -48,24 +48,18 @@ val enablePremiumPatch = bytecodePatch(
         val subscriberLevelField = UserFingerprint.classDef.fieldFromToString("subscriberLevel")
         val subscriberLevel = if (optionIsMax) "GOLD" else "PREMIUM"
 
-        // These fields are calculated in constructor, but not serialized. So we have to find their
-        // name and set it late.
+        // isPaidField (O0) via le fingerprint existant
         val isPaidField = UserIsPaidFieldUsageFingerprint.method.let {
             val isPaidIndex = it.indexOfFirstInstructionOrThrow(Opcode.IGET_BOOLEAN)
             it.getInstruction<ReferenceInstruction>(isPaidIndex).getReference<FieldReference>()!!
         }
-        val hasGoldField = UserHasGoldFieldUsageFingerprint.method.let {
-            val hasGoldIndex = it.indexOfFirstInstructionOrThrow(Opcode.IGET_BOOLEAN)
-            it.getInstruction<ReferenceInstruction>(hasGoldIndex).getReference<FieldReference>()!!
-        }
 
-        // Remove final keyword on fields we want to patch.
-        val fields = mutableSetOf(hasPlusField, subscriberLevelField, isPaidField, hasGoldField)
+        // On ne cherche plus hasGold (champ supprimé dans v6.77.5)
+        // Retire le flag FINAL uniquement sur les champs encore utilisés
+        val fields = mutableSetOf(hasPlusField, subscriberLevelField, isPaidField)
         fields.forEach { UserFingerprint.classDef.fieldByName(it.name).removeFlag(AccessFlags.FINAL) }
 
-        // For patching user properties, we target the User object that is passed in to the
-        // constructor of the LoggedIn class. This way we don't affect all instances of users
-        // (eg. viewing a friend's profile).
+        // Injection dans le constructeur de la nouvelle classe (hy/c1)
         LoggedInStateFingerprint.classDef.constructor().apply {
             val userType = UserFingerprint.classDef.type
             val patchIndex = this.instructions.count() - 1
@@ -77,13 +71,9 @@ val enablePremiumPatch = bytecodePatch(
                 iput-boolean v0, p1, $userType->${isPaidField.name}:Z
                 iput-boolean v0, p1, $userType->${hasPlusField.name}:Z
                 """.trimIndent()
-            );
+            )
 
-            if (optionIsMax) {
-                instrSb.appendLine(
-                    "iput-boolean v0, p1, $userType->${hasGoldField.name}:Z"
-                )
-            }
+            // Plus de ligne pour hasGold (champ supprimé)
 
             instrSb.appendLine(
                 """
@@ -92,11 +82,8 @@ val enablePremiumPatch = bytecodePatch(
                 """.trimIndent()
             )
 
-            // Single-parameter method means User will always be in p1.
-            // Inserting right before method return, so we can clobber existing registers.
-            this.addInstructions(
-                patchIndex, instrSb.toString()
-            )
+            // Injection juste avant le return
+            this.addInstructions(patchIndex, instrSb.toString())
         }
     }
 }
