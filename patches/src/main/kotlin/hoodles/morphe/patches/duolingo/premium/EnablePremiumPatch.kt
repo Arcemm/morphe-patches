@@ -43,23 +43,22 @@ val enablePremiumPatch = bytecodePatch(
 
     execute {
         val optionIsMax = enumValueOf<PremiumVariant>(premiumVariant!!) == PremiumVariant.MAX
+        val subscriberLevel = if (optionIsMax) "GOLD" else "PREMIUM"
 
         val hasPlusField = UserFingerprint.classDef.fieldFromToString("hasPlus")
         val subscriberLevelField = UserFingerprint.classDef.fieldFromToString("subscriberLevel")
-        val subscriberLevel = if (optionIsMax) "GOLD" else "PREMIUM"
 
-        // isPaidField (O0) via le fingerprint existant
+        // isPaidField (O0)
         val isPaidField = UserIsPaidFieldUsageFingerprint.method.let {
             val isPaidIndex = it.indexOfFirstInstructionOrThrow(Opcode.IGET_BOOLEAN)
             it.getInstruction<ReferenceInstruction>(isPaidIndex).getReference<FieldReference>()!!
         }
 
-        // On ne cherche plus hasGold (champ supprimé dans v6.77.5)
-        // Retire le flag FINAL uniquement sur les champs encore utilisés
+        // Retire le flag FINAL sur les champs utilisés
         val fields = mutableSetOf(hasPlusField, subscriberLevelField, isPaidField)
         fields.forEach { UserFingerprint.classDef.fieldByName(it.name).removeFlag(AccessFlags.FINAL) }
 
-        // Injection dans le constructeur de la nouvelle classe (hy/c1)
+        // Injection dans le constructeur de Lhy/c1
         LoggedInStateFingerprint.classDef.constructor().apply {
             val userType = UserFingerprint.classDef.type
             val patchIndex = this.instructions.count() - 1
@@ -73,8 +72,7 @@ val enablePremiumPatch = bytecodePatch(
                 """.trimIndent()
             )
 
-            // Plus de ligne pour hasGold (champ supprimé)
-
+            // Injection du niveau d'abonnement (PREMIUM ou GOLD)
             instrSb.appendLine(
                 """
                 sget-object v0, ${subscriberLevelField.type}->$subscriberLevel:${subscriberLevelField.type}
@@ -82,7 +80,6 @@ val enablePremiumPatch = bytecodePatch(
                 """.trimIndent()
             )
 
-            // Injection juste avant le return
             this.addInstructions(patchIndex, instrSb.toString())
         }
     }
